@@ -35,9 +35,9 @@ public class AcodemyShopTest {
         browserOptions.setCapability("sauce:options", sauceOptions);
         URL url = new URL("https://oauth-vernere.agita-c788a:28a32aea-0096-4931-8fd7-47c3286533a2@ondemand.eu-central-1.saucelabs.com:443/wd/hub");
         driver = new RemoteWebDriver(url, browserOptions);
-//        driver = new RemoteWebDriver(new URL("http://192.168.1.123:4444"), chromeOptions);
-//        driver = new RemoteWebDriver(new URL("https://oauth-vernere.agita-c788a:28a32aea-0096-4931-8fd7-47c3286533a2@ondemand.eu-central-1.saucelabs.com:443/wd/hub")
-//        );
+//        lokālais serveris
+//        ChromeOptions chromeOptions = new ChromeOptions();
+//        driver = new RemoteWebDriver(new URL("http://192.168.0.110:4444"), chromeOptions);
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -125,9 +125,6 @@ public class AcodemyShopTest {
         actions.keyDown(Keys.CONTROL).sendKeys("k").perform();
         Thread.sleep(5000);
     }
-
-
-
 
 
 
