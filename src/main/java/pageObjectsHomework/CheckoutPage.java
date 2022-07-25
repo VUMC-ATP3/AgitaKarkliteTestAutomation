@@ -51,6 +51,9 @@ public class CheckoutPage {
         return driver.findElement(errorZipPostalCode);
     }
 
-
+    private By errorMessageHomework = By.cssSelector("div[class='error-message-container error']");
+    public WebElement getErrorMessageHomework(){
+        return driver.findElement(errorMessageHomework);
+    }
 
 }

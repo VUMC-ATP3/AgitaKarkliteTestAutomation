@@ -38,13 +38,13 @@ public class SauceLabsStepDefinitions {
         driver.get(url);
     }
 
-    @Then("user sees page title {string}")
+    @When("user sees page title {string}")
     public void user_sees_page_title(String pageTitle) {
         Assert.assertEquals(driver.getTitle(), pageTitle);
 
     }
 
-    @When("user enters username {string} and password {string}")
+    @And("user enters username {string} and password {string}")
     public void userEntersUsernameUsernameAndPasswordPassword(String username, String password) {
 
         loginPage.getUsernameField().sendKeys(username);
